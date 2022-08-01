@@ -41,9 +41,10 @@ body {
 
 .home__item {
   width: 50rem;
-  height: 30rem;
+  height: 28rem;
   text-align: center;
   border: 1px solid white;
+  overflow: hidden;
 }
 
 .home__land img{
