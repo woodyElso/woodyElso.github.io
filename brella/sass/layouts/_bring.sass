@@ -1,0 +1,65 @@
+.bring
+    max-width: 1440px
+    margin: 0 auto
+    
+    ul
+        font-size: 32px
+        line-height: 1.3
+        font-weight: bold
+        font-family: $roboto
+        color: $primary-light
+    li:not(:first-child)
+        margin-top: 18px
+    p
+        font-size: 20px
+        line-height: 1.7
+        font-weight: 400
+        font-family: $raleway
+        color: $light
+    p:not(:first-child)
+        margin-top: 34px
+
+.l-bring-cont
+    display: flex
+
+.l-bring-first-side
+    flex-basis: 50%
+    background: rgba(227, 238, 237, 1)
+    padding: 120px 197px 129px 120px
+.l-bring-second-side
+    flex-basis: 50%
+    background: rgba(33, 78, 65, 1)
+    padding: 165px 132px 203px 115px
+
+.l-bring-short-cont 
+    display: flex
+    justify-content: space-between
+
+@media only screen and (max-width: 911px)
+    .bring
+        ul
+            font-size: 20px
+        p
+            font-size: 15px
+    .l-bring-first-side
+        padding: 90px 167px 99px 90px
+    .l-bring-second-side
+        padding: 135px 102px 173px 95px
+
+@media only screen and (max-width: 767px)
+    .l-bring-first-side
+        padding: 60px 137px 69px 60px
+    .l-bring-second-side
+        padding: 105px 72px 143px 75px
+
+@media only screen and (max-width: 479px)
+    .bring
+        ul
+            font-size: 13px
+        p
+            font-size: 10px
+
+    .l-bring-first-side
+        padding: 60px 97px 29px 50px
+    .l-bring-second-side
+        padding: 65px 32px 113px 45px

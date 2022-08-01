@@ -1,0 +1,38 @@
+.trash
+    display: flex
+    align-items: center
+    gap: 10px
+    &--logo
+        img
+            width: 100%
+            height: auto
+    &--w
+    &--title
+        font-size: 16px
+        line-height: 1.5
+        font-weight: 400
+        font-family: $raleway
+        color: $primary
+    &--desc
+        font-size: 14px
+        line-height: 1.5
+        font-weight: 400
+        font-family: $raleway
+        color: $primary
+
+        margin-top: 7px
+
+@media only screen and (max-width: 911px)
+    
+
+@media only screen and (max-width: 767px)
+    .trash
+        gap: 10px
+        &--logo
+            img
+                width: 18px
+                height: auto
+        &--title
+            font-size: 13px
+        &--desc
+            font-size: 11px

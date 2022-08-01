@@ -1,0 +1,83 @@
+.double
+    max-width: 1170px
+    padding: 0 15px
+    margin: 120px auto 0
+.l-double-upper
+    display: flex
+    .info
+        flex-basis: 50%
+        span
+            display: block
+            font-size: 13px
+            line-height: 1.6
+            font-family: $raleway
+            font-weight: bold
+            color: $primary-light
+            text-transform: uppercase
+        h2
+            font-size: 36px
+            line-height: 1.3
+            font-weight: bold
+            font-family: $roboto
+            color: $primary
+            margin-top: 20px
+        p
+            font-size: 18px
+            line-height: 1.6
+            font-weight: 400
+            font-family: $raleway
+            color: $secondary
+            margin-top: 34px
+    .img
+        flex-basis: 50%
+        padding-left: 40px
+        img
+            width: 100%
+            height: auto
+.l-double-lower
+    display: flex
+    justify-content: space-between
+    gap: 70px
+    margin-top: 60px
+    .item
+        flex-basis: 25%
+        div
+            font-size: 60px
+            line-height: 1.3
+            font-weight: bold
+            font-family: $roboto
+            color: rgba(240, 164, 70, 1)
+        p
+            font-size: 13px
+            line-height: 1.6
+            font-weight: bold
+            font-family: $raleway
+            color: $primary
+            margin-top: 13px
+
+@media only screen and (max-width: 767px)
+    .l-double-lower
+        flex-wrap: wrap
+        gap: 20px
+        .item
+            flex-basis: calc(50% - 20px)
+
+@media only screen and (max-width: 479px)
+    .l-double-upper
+        flex-wrap: wrap
+        .info
+            flex-basis: 100%
+        .img
+            flex-basis: 80%
+            margin: 0 auto
+            padding-left: 0
+            margin-top: 40px
+    .l-double-lower
+        flex-wrap: wrap
+        justify-content: center
+        gap: 20px
+        margin-top: 30px
+        .item
+            flex-basis: 50%
+            p
+                margin-top: 0

@@ -1,0 +1,64 @@
+// ==========
+// == NAV ===
+// ==========
+
+.nav
+    display: flex
+    align-items: center
+    &--link
+        font-size: 14px
+        line-height: 1.5
+        font-weight: bold
+        font-family: $raleway
+        color: $primary
+        transition: color .2s
+        &:hover
+            color: $dark
+        &:not(:first-child)
+            margin-left: 50px
+    &--button
+        font-size: 14px
+        line-height: 1.5
+        font-weight: bold
+        font-family: $raleway
+        color: $light
+        background: #43806C
+        border-radius: 6px
+        padding: 10px 15px
+        margin-left: 69px
+    &--choise
+        margin-left: 29px
+        select
+            font-size: 13px
+            line-height: 1.6
+            font-weight: 700
+            font-family: $raleway
+            color: $primary
+            option
+                font-size: 13px
+                line-height: 1.6
+                font-weight: 700
+                font-family: $raleway
+                color: $primary
+    &--selected
+        font-size: 13px
+        line-height: 1.6
+        font-weight: 700
+        font-family: $raleway
+        margin-left: 44px
+
+@media only screen and (max-width: 1199px)
+    .nav
+        &--link
+            &:not(:first-child)
+                margin-left: 30px
+        &--button
+            margin-left: 45px
+        &--choise
+            margin-left: 15px
+        &--selected
+            margin-left: 30px
+
+@media only screen and (max-width: 910px)
+    .nav
+        display: none

@@ -1,0 +1,28 @@
+// ===============
+// === burger =====
+// ===============
+
+@media only screen and (max-width: 910px)
+    .burger
+        width: 30px
+        height: 30px
+        position: relative
+        overflow: hidden
+        z-index: 3
+
+        span
+            background: $dark
+            width: 30px
+            height: 2px
+            position: absolute
+            top: 50%
+            transition: all .5s
+
+            &:nth-of-type(2)
+                top: calc(50% - 5px) 
+            &:nth-of-type(3)
+                top: calc(50% + 5px)
+
+@media only screen and (min-width: 911px)
+    .burger
+        display: none

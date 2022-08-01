@@ -1,0 +1,29 @@
+.insurance
+    width: fit-content
+    &--title
+        font-size: 36px
+        line-height: 1.3
+        font-weight: 700
+        font-family: $roboto
+        color: $primary
+    &--desc
+        font-size: 16px
+        line-height: 1.5
+        font-weight: 700
+        font-family: $raleway
+        color: $primary
+        margin-top: 40px
+    &--form
+        margin-top: 16px
+
+@media only screen and (max-width: 911px)
+    .insurance
+        text-align: center
+        display: flex
+        flex-direction: column
+        align-items: center
+        &--title
+            font-size: 30px
+        &--desc
+            margin-top: 20px
+        &--form

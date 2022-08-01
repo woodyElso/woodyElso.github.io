@@ -1,0 +1,39 @@
+// =========================
+// ==== mob menu ===========
+// =========================
+
+.mob-nav
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    gap: 40px
+    z-index: 2
+
+    transform: translateX(-100%)
+    transition: transform .5s
+    &:before
+        content: ''
+        position: absolute
+        background: inherit
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        box-shadow: inset 0 0 0 3000px rgba(150, 150, 150, 0.500)
+        z-index: -1
+
+    &--link
+        font-size: 14px
+        font-weight: 700
+        font-family: $raleway
+        line-height: 1.5
+        color: $primary
+        transition: color .2s
+        &:hover
+            color: $light
