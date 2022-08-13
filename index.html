@@ -2,61 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     
     <!-- Useful meta tags -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="robots" content="index, follow">
-    <meta name="google" content="notranslate">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="description" content="">
     
     <title>Home</title>
 </head>
 <body>
 
-    
-    <div class="home">
-       <div class="home__top">
-          ниже есть примеры работ
-       </div>
-       <div class="home__content">
-    
-          <div class="home__item">
-             <a class="home__land" href="leanspin/index.html">
-               <img src="img/leanspin.png" alt="leanspin">
-             </a>
-          </div>
-          <div class="home__item">
-             <a class="home__land" href="brella/index.html">
-               <img src="img/brella.png" alt="brella">
-             </a>
-          </div>
-          <div class="home__item">
-             <a class="home__land" href="#">
-               <img src="" alt="LANDING 3">
-             </a>
-          </div>
-          <div class="home__item">
-             <a class="home__land" href="borders/index.html">
-               <img src="" alt="borders">
-             </a>
-          </div>
-          <div class="home__item">
-             <a class="home__land" href="#">
-               <img src="" alt="LANDING 5">
-             </a>
-          </div>
-          <div class="home__item">
-             <a class="home__land" href="#">
-               <img src="" alt="LANDING 6">
-             </a>
-          </div>
-          
-       </div>
-    </div>
+<header class="header">
+   <div class="header__content">
+      <a href="#" class="logo">portfolio</a>
+      <div id="burgerBtn" class="burger__btn" for="burger__toggle">
+         <span></span>
+      </div>
+   </div>
+   <div id="headerMenu" class="header__menu">
+      <nav class="header__nav">
+         <ul class="header__list">
+            <li id="landingPagesLink" class="header__link">landing pages</li>
+            <li class="header__link">snippets</li>
+            <li class="header__link">about me</li>
+         </ul>
+      </nav>
+   </div>
+</header>
 
-    <script src="assets/js/app.js"></script>
+<div class="main">
+   <div id="mainItem" class="main__item">
+      <nav class="main__nav">
+         <div class="main__title">landing pages</div>
+         <div class="main__nav-cont">
+            <a href="#" class="main__back">back</a>
+            <div id="mainClose" class="main__close">
+               <img src="./img/svg/close.svg" alt="close landing pages">
+            </div>
+         </div>
+      </nav>
+      <div class="main__content">
+
+         <!-- Content -->
+         <div class="card"> 
+            <div class="card__wrap leanspin">
+               <a class="card__content" href="#">
+                  <h2 class="card__title">leanspin</h2>
+               </a>
+               <div class="card__blur"></div>
+            </div>
+         </div>
+
+         <div class="card">
+            <div class="card__wrap brella">
+               <a class="card__content" href="#">
+                  <h2 class="card__title">brella</h2>
+               </a>
+               <div class="card__blur"></div>
+            </div>
+         </div>
+
+         <div class="card">
+            <div class="card__wrap">
+               <a class="card__content" href="#">
+                  <h2 class="card__title">Leanspin</h2>
+               </a>
+               <div class="card__blur"></div>
+            </div>
+         </div>
+
+         <div class="card">
+            <div class="card__wrap">
+               <a class="card__content" href="#">
+                  <h2 class="card__title">Leanspin</h2>
+               </a>
+               <div class="card__blur"></div>
+            </div>
+         </div>
+         <!-- Content -->
+
+
+      </div>
+   </div>
+</div>
+
+<footer id="footer">Footer</footer>
+
+<script src="./js/main.js"></script>
 </body>
 </html>
+
